@@ -7,4 +7,5 @@ spec:
   selector:
     app: segundo-pod # pod que o svc escuta que foi declarado na label do pod
   ports:
-    - port: 80 #porta que o svc recebe e despacha a requisição para o pod
+    - port: 9000 #porta que o svc recebe a requisição
+      targetPort: 80 #porta do pod para despachar a requisição

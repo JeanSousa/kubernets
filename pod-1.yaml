@@ -2,6 +2,8 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: pod-1
+  labels:
+    app: primeiro-pod #faz o bind com o selector de um SVC
 spec:
   containers:
     - name: container-pod-1

@@ -10,4 +10,6 @@ spec:
       image: aluracursos/sistema-noticias:1
       ports:
       - containerPort: 80
-  
+      envFrom: #Importando todas as variáveis do configmap neste pod
+        - configMapRef:
+            name: sistema-configmap
